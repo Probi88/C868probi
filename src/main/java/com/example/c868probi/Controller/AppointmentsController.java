@@ -258,6 +258,7 @@ public class AppointmentsController implements Initializable {
         if (radioContactAppointments.isSelected()) {
             allAppointments.sort(Comparator.comparing(Appointments::getAppointmentContact));
             appointmentsTable.setItems(allAppointments);
+            appointmentsTable.refresh();
         }
     }
 
