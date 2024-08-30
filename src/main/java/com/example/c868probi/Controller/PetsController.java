@@ -136,7 +136,7 @@ public class PetsController implements Initializable {
                 alert.setContentText("Please enter a phone number.");
                 alert.showAndWait();
                 return;
-            }if (breed.isEmpty()){ //== null){
+            }if (breed.isEmpty()){
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("Please enter a country.");
                 alert.showAndWait();
@@ -178,7 +178,7 @@ public class PetsController implements Initializable {
 
     @FXML
     void petModifyAction(ActionEvent event) throws IOException, SQLException {
-        Pets selectPet = (Pets)petTable.getSelectionModel().getSelectedItem();
+        Pets selectPet = petTable.getSelectionModel().getSelectedItem();
         if(selectPet == null){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("you must select a pet to continue");
