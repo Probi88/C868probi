@@ -252,14 +252,6 @@ public class ModifyAppointmentsController implements Initializable {
                     alert.showAndWait();
                     return;
                 }
-                for(Appointments appointments : AppointmentsDAO.getAllAppointments()){
-                    if(appointments.getAppointmentStart().isAfter(startDateTime) && appointments.getAppointmentStart().isBefore(endDateTime) || appointments.getAppointmentStart().isBefore(startDateTime) && appointments.getAppointmentEnd().isAfter(startDateTime) || appointments.getAppointmentStart().equals(startDateTime)){
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setContentText("Appointments must not have an overlap in times with other appointments.");
-                        alert.showAndWait();
-                        return;
-                    }
-                }
                 if(modifyAppointmentTypeComboBox.getValue().equals("Car Checkup") && special.contains("Pet")){
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setContentText("Please select a Car.");
