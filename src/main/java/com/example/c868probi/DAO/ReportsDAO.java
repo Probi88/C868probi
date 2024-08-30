@@ -30,7 +30,7 @@ public class ReportsDAO {
             while(resultset.next()){
                 Integer total = resultset.getInt("total");
                 String month = resultset.getString("month_name");
-                Reports reports = new Reports(total, month); //fixme here
+                Reports reports = new Reports(total, month);
                 monthTotalReport.add(reports);
             }
         } catch (Exception e) {

@@ -40,7 +40,6 @@ public class CustomerDAO {
                 Customers customers = new Customers(customerId, customerName, address, postalCode, phoneNumber, customerDivision, countryData);
                 allCustomers.add(customers);
             }
-            //return null;//fixme remove
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
