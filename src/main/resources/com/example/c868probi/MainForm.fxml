@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c868probi.Controller.MainController">
+   <children>
+      <Pane layoutX="20.0" layoutY="19.0" prefHeight="363.0" prefWidth="560.0" style="-fx-border-radius: 15; -fx-border-color: black;">
+         <children>
+            <Button fx:id="mainExitButton" layoutX="260.0" layoutY="292.0" mnemonicParsing="false" onAction="#mainExitAction" text="Exit" />
+            <Button fx:id="mainAppointmentsButton" layoutX="234.0" layoutY="111.0" mnemonicParsing="false" onAction="#mainAppointmentsAction" text="Appointments" />
+            <Button fx:id="mainCustomerButton" layoutX="244.0" layoutY="148.0" mnemonicParsing="false" onAction="#mainCustomerAction" text="Customer" />
+            <Button fx:id="mainPetButton" layoutX="260.0" layoutY="182.0" mnemonicParsing="false" onAction="#mainPetAction" text="Pets" />
+            <Label layoutX="230.0" layoutY="10.0" text="Main Menu">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="mainCarButton" layoutX="258.0" layoutY="217.0" mnemonicParsing="false" onAction="#mainCarAction" text="Cars" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

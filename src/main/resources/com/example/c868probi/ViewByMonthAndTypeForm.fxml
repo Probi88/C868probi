@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c868probi.Controller.ViewMonthTypeReportController">
+   <children>
+      <TableView fx:id="reportsTotalTypeTable" layoutX="35.0" layoutY="41.0" prefHeight="298.0" prefWidth="314.0" style="-fx-border-radius: 15;">
+         <columns>
+            <TableColumn fx:id="reportsTotalTypeColumn" prefWidth="105.19999694824219" text="Total" />
+            <TableColumn fx:id="reportsTypeColumn" minWidth="0.0" prefWidth="207.0" text="Type" />
+         </columns>
+      </TableView>
+      <Button fx:id="toAppointmentsButton" layoutX="676.0" layoutY="360.0" mnemonicParsing="false" onAction="#toAppointmentsAction" text="Exit" />
+      <TableView fx:id="reportsTotalMonthTable" layoutX="398.0" layoutY="41.0" prefHeight="298.0" prefWidth="314.0" style="-fx-border-radius: 15;">
+         <columns>
+            <TableColumn fx:id="reportsTotalMonthColumn" prefWidth="137.0" text="Total" />
+            <TableColumn fx:id="reportsMonthColumn" prefWidth="176.0" text="Month" />
+         </columns>
+      </TableView>
+      <TabPane layoutX="35.0" layoutY="14.0" prefHeight="200.0" prefWidth="415.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+        <tabs>
+          <Tab text="Month and Type Report">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="14.0" layoutY="6.0" text="Month &amp; Type Total View Report">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="7.0" text="Current Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthTypeDateLabel" layoutX="644.0" layoutY="12.0" text="Current Date" />
+   </children>
+</AnchorPane>

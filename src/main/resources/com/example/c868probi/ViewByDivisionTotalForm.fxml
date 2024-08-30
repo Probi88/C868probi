@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c868probi.Controller.ViewDivisionTotalReportController">
+   <children>
+      <TableView fx:id="reportsDivisionTotalTable" layoutX="36.0" layoutY="45.0" prefHeight="322.0" prefWidth="565.0" style="-fx-border-radius: 15;">
+         <columns>
+            <TableColumn fx:id="reportsDivisionColumn" prefWidth="283.20002365112305" text="First Level Division" />
+            <TableColumn fx:id="reportsDivisionTotalColumn" prefWidth="282.39996337890625" text="Total" />
+         </columns>
+      </TableView>
+      <Button fx:id="toAppointmentsButton" layoutX="520.0" layoutY="373.0" mnemonicParsing="false" onAction="#toAppointmentsAction" text="Exit" />
+      <Label layoutX="24.0" layoutY="14.0" text="First Level Division Total View Report">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="15.0" text="Current Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="divisionTotalDateLabel" layoutX="533.0" layoutY="20.0" text="Current Date" />
+   </children>
+</AnchorPane>

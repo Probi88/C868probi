@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c868probi.Controller.ModifyPetController">
+   <children>
+      <Pane layoutX="20.0" layoutY="38.0" prefHeight="350.0" prefWidth="360.0" style="-fx-border-color: black; -fx-border-radius: 15;">
+         <children>
+            <TextField fx:id="modifyPetIDField" disable="true" editable="false" layoutX="14.0" layoutY="70.0" />
+            <TextField fx:id="modifyPetNameField" layoutX="14.0" layoutY="117.0" />
+            <TextField fx:id="modifyPetAddressField" layoutX="14.0" layoutY="163.0" />
+            <TextField fx:id="modifyPetPhoneNumberField" layoutX="14.0" layoutY="213.0" />
+            <TextField fx:id="modifyPetSpeciesField" layoutX="14.0" layoutY="258.0" />
+            <TextField fx:id="modifyPetBreedField" layoutX="14.0" layoutY="311.0" />
+            <ComboBox fx:id="modifyPetCustomerIDField" layoutX="13.0" layoutY="25.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="6.0" prefHeight="17.0" prefWidth="149.0" text="Customer Id" />
+            <Label layoutX="13.0" layoutY="50.0" prefHeight="17.0" prefWidth="150.0" text="Pet Id" />
+            <Label layoutX="13.0" layoutY="95.0" prefHeight="17.0" prefWidth="150.0" text="Pet Name" />
+            <Label layoutX="14.0" layoutY="142.0" prefHeight="17.0" prefWidth="149.0" text="Address" />
+            <Label layoutX="14.0" layoutY="188.0" prefHeight="17.0" prefWidth="149.0" text="Phone Number" />
+            <Label layoutX="14.0" layoutY="238.0" prefHeight="17.0" prefWidth="149.0" text="Pet Species" />
+            <Label layoutX="14.0" layoutY="283.0" prefHeight="17.0" prefWidth="149.0" text="Pet Breed" />
+         </children></Pane>
+      <Label layoutX="20.0" layoutY="12.0" text="Modify Pet">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button fx:id="modifyPetCancelButton" layoutX="328.0" layoutY="403.0" mnemonicParsing="false" onAction="#modifyPetCancelAction" text="Cancel" />
+      <Button fx:id="modifyPetSaveButton" layoutX="276.0" layoutY="403.0" mnemonicParsing="false" onAction="#modifyPetSaveAction" text="Save" />
+   </children>
+</AnchorPane>

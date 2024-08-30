@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="268.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c868probi.Controller.PetSelectionController">
+   <children>
+      <Pane layoutX="4.0" layoutY="28.0" prefHeight="189.0" prefWidth="425.0" style="-fx-border-radius: 15; -fx-border-color: black;">
+         <children>
+            <TableView fx:id="petSelectionTable" layoutX="6.0" layoutY="7.0" prefHeight="177.0" prefWidth="410.0">
+              <columns>
+                <TableColumn fx:id="petSelectionIDColumn" prefWidth="57.333343505859375" text="Pet ID" />
+                <TableColumn fx:id="petSelectionNameColumn" prefWidth="125.33332824707031" text="Pet Name" />
+                  <TableColumn fx:id="petSelectionBreedTypeColumn" prefWidth="130.00001525878906" text="Pet Type and Breed" />
+                  <TableColumn fx:id="petSelectionCustomerIDColumn" prefWidth="94.66665649414062" text="Customer ID" />
+              </columns>
+            </TableView>
+         </children></Pane>
+      <Label layoutX="4.0" layoutY="-1.0" text="Please Select a Pet">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="petSelectionSelectButton" layoutX="4.0" layoutY="229.0" mnemonicParsing="false" onAction="#petSelectionSelectAction" text="Select" AnchorPane.leftAnchor="55.0" />
+      <Button fx:id="petSelectionCancelButton" layoutX="377.0" layoutY="229.0" mnemonicParsing="false" onAction="#petSelectionCancelAction" text="Cancel" AnchorPane.rightAnchor="55.0" />
+   </children>
+</AnchorPane>
